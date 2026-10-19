@@ -175,43 +175,44 @@ showReview();
 
 
 
-  function uppdateraInformation() {
-  const nu = new Date();
+  class Oppettider {
+  constructor() {
+    this.klocka = document.getElementById("klocka");
+    this.datum = document.getElementById("datum");
+    this.status = document.getElementById("status");
+  }
 
-  // Visa klockan med två siffror för timmar, minuter och sekunder
-  const timmar = String(nu.getHours()).padStart(2, "0");
-  const minuter = String(nu.getMinutes()).padStart(2, "0");
-  const sekunder = String(nu.getSeconds()).padStart(2, "0");
+  uppdatera() {
+    const nu = new Date();
 
-  document.getElementById("klocka").textContent =
-    `${timmar}:${minuter}:${sekunder}`;
+    const timmar = String(nu.getHours()).padStart(2, "0");
+    const minuter = String(nu.getMinutes()).padStart(2, "0");
+    const sekunder = String(nu.getSeconds()).padStart(2, "0");
 
-  // Visa datum på svenska
-  document.getElementById("datum").textContent =
-    new Intl.DateTimeFormat("sv-SE", {
+    this.klocka.textContent = `${timmar}:${minuter}:${sekunder}`;
+
+    this.datum.textContent = new Intl.DateTimeFormat("sv-SE", {
       weekday: "long",
       year: "numeric",
       month: "long",
       day: "numeric"
     }).format(nu);
 
-  // Räkna ut om Tassen har öppet
-  // Söndag = 0, måndag = 1, ..., lördag = 6
-  const veckodag = nu.getDay();
-  const timme = nu.getHours();
+    const veckodag = nu.getDay(); // söndag = 0, måndag = 1, ..., lördag = 6
+    const timme = nu.getHours();
 
-  const oppet =
-    (veckodag >= 1 && veckodag <= 5 && timme >= 7 && timme < 18) ||
-    (veckodag === 6 && timme >= 9 && timme < 14);
+    const oppet =
+      (veckodag >= 1 && veckodag <= 5 && timme >= 7 && timme < 18) ||
+      (veckodag === 6 && timme >= 9 && timme < 14);
 
-  // Visa status både som text och färgklass
-  const status = document.getElementById("status");
-  status.textContent = oppet ? "Öppet just nu" : "Stängt just nu";
-  status.className = oppet ? "oppet" : "stangt";
+    this.status.textContent = oppet ? "Öppet just nu" : "Stängt just nu";
+    this.status.className = oppet ? "oppet" : "stangt";
+  }
 }
 
-// Kör en gång direkt och uppdatera sedan varje sekund
-uppdateraInformation();
-setInterval(uppdateraInformation, 1000);
+const tassenOppettider = new Oppettider();
+tassenOppettider.uppdatera();
 
-
+setInterval(() => {
+  tassenOppettider.uppdatera();
+}, 1000);
