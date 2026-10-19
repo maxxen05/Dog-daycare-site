@@ -10,3 +10,4 @@ i gruppuppgiften så lärde vis oss att använda oss av hidden som vi kopplade m
 
 Så jämförde jag med andra hund sidor och valde då att ha en logga högst upp samt en trevlig natur & hund bakgrunds bild samt namn på hund pansionatet. Vi har även en öppen just nu/ stängd just nu som uppdateras automatiskt så besökare ser om de är öppet eller inte. 
 
+
