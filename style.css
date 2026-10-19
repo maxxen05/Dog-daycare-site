@@ -1,0 +1,332 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+
+}
+
+form {
+    text-align: center;
+    font-size: 20px;
+}
+
+.hero {
+    background-image: url(https://i.redd.it/usxjzp1ddrd91.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.hero h1 {
+    color: white;
+    font-size: 48px;
+    margin: 20px 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    font-size: 20px;
+    background-color: beige;
+    font-size: 25px;
+}
+
+
+.header-container {
+    text-align: center;
+    font-size: 20px;
+}
+
+.paket-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+}
+
+.paket {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 100px;
+    padding: 10px;
+    display: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    min-height: 200px;
+    text-align: center;
+    color: white;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTijgPIC-FVSgJdfC_k0b3pUHaIpWlcXW77ZTgAMHrr_A&s=10);
+    margin-bottom: 1px;
+
+}
+
+.paket {
+    flex: 1;
+}
+
+
+
+.Om-oss h1 {
+text-align: center;
+font-family:fantasy;
+}
+
+.Om-oss {
+    font-family:monospace;
+    font-family: Arial, sans-serif;
+}
+
+.Personal-paket h1 {
+    text-align: center;
+   
+}
+
+.personal {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    
+
+     
+}
+
+.person {
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.person img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    object-position:center 20%;
+
+}
+
+.person p {
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .personal {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
+.rubrik {
+    text-align: center;
+}
+
+
+form {
+  border-radius: 50px;
+  color: white;
+  padding: 10px;
+  width: min(100% - 2rem, 500px) ;
+  align-items: center;
+  margin-inline: auto;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/109/549/253/space-stars-flowers-night-wallpaper-preview.jpg);
+  background-size: 850px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 40%;
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #d40404;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+.omdömen {
+    text-align: center;
+}
+
+
+#job {
+    text-align: center;
+}
+
+#opinion {
+    text-align: center;
+}
+
+
+#name {
+    text-align: center;
+}
+
+#review {
+    border-radius: 50px;
+  color: rgb(13, 13, 13);
+  padding: 10px;
+  width: min(100% - 2rem, 500px) ;
+  align-items: center;
+  margin-inline: auto;
+   font-size: 30px;
+   background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+  
+}
+
+.review-btn {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: #5b8c5a;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.review-btn:hover {
+  background-color: #0e37da;
+  transform: scale(1.08);
+}
+
+.review-btn:focus-visible {
+  outline: 3px solid #222;
+  outline-offset: 3px;
+}
+
+
+.review-btn i {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+}
+
+.review-btn i.left {
+  transform: rotate(-135deg);
+  margin-left: 4px;
+}
+
+.review-btn i.right {
+  transform: rotate(45deg);
+  margin-right: 4px;
+}
+
+
+
+
+#status {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(21, 20, 20);
+    background-color: whitesmoke;
+    
+}
+
+.oppettider {
+    text-align: center;
+    background-image: url(https://www.indigenousbc.com/content/uploads/2024/09/63615_PowerPoint-2400px-1.jpg);
+    color: white;
+}
+
+#klocka {
+    font-size: 30px;
+}
+
+#op {
+    font-size: 30px;
+}
+
+#mon {
+    font-size: 20px;
+}
+
+#lor {
+    font-size: 20px;
+}
+
+#so {
+    font-size: 30px;
+}
+
+#datum {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: beige;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+}

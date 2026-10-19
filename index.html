@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,249 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
+
 <body>
-    
+    <div class="hero">
+        <img src="images/hund.png" alt="hund symbol">
+        <section id="hem">
+            <h1>Hundpensionatet Tassen</h1>
+            <h2>Söndag Stängt</h2>
+            <div class="oppettider">
+                <p id="status" aria-live="polite"></p>
+            </div>
+
+
+        </section>
+    </div>
+
+    <nav>
+        <a href="#hem" data-section="hem">Hem</a>
+        <a href="#tjanster" data-section="tjanster">Tjänster</a>
+        <a href="#oppettider" data-section="oppettider">Öppettider</a>
+
+
+        <a href="#personal" data-section="personal">Personal</a>
+        <a href="#kontakt" data-section="kontakt">Kontakt</a>
+        <a href="#review" data-section="review">Omdömen</a>
+    </nav>
+    </div>
+
+    <section id="oppettider" class="page" hidden>
+        <div class="oppettider">
+
+
+            <h4 id="op">Öppettider</h4>
+            <p id="mon">Mån-Fre: 07-18</p>
+            <p id="lor">Lör: 09-14</p>
+            <p id="so">Sön: Stängt</p>
+            <hr />
+
+            <h2>Dagens-Datum-Tid</h2>
+
+            <p><time id="klocka"></time></p>
+            <p id="datum"></p>
+            <p id="status" aria-live="polite"></p>
+        </div>
+    </section>
+
+
+    <section id="hem" class="page">
+        <div class="Om-oss">
+            <h1>Om oss</h1>
+            <p>Tassen är ett litet hunddagis och pensionat strax utanför stan. Här tar två engagerade medarbetare hand
+                om
+                upp till tolv hundar åt gången, så att varje hund får tid, omsorg och uppmärksamhet</p>
+            <p>Tassen grundades 2023 av två hundälskare som ville skapa en trygg och hemtrevlig plats för hundar när
+                deras
+                ägare arbetar eller reser bort. De märkte att många hundägare sökte en miljö där hundarna inte bara blev
+                passade, utan också fick leka, röra på sig och känna sig omhändertagna. Därför bestämde de sig för att
+                starta Tassen.</p>
+            <p>Hos oss finns ett stort, inhägnat utomhusområde där hundarna kan leka, nosa och upptäcka i en trygg
+                miljö.
+                Inomhus finns det sköna platser för vila och lugna stunder. Vi lär känna varje hunds personlighet och
+                försöker anpassa dagarna efter vad just den hunden behöver</p>
+            <p>Vår målsättning är att hundarna ska känna sig trygga och glada — och att deras ägare ska kunna känna sig
+                lugna när de lämnar dem hos oss. Tassen ska vara en plats där hundar trivs och känner sig som hemma.</p>
+        </div>
+    </section>
+
+    <section id="tjanster" class="page" hidden>
+        <div class="header-container">
+            <h1>Tjänster</h1>
+        </div>
+
+        <div class="paket-container">
+            <div class="paket">
+                <h2>Heldag</h2>
+                <p>Pris: 320kr</p>
+                <p>Tider: 07-18</p>
+                <p>Ingår två måltider</p>
+                <hr />
+                <p>+ 150kr för upphämtning & avlämning</p>
+            </div>
+
+            <div class="paket">
+                <h2>Halvdag</h2>
+                <p>Pris: 190kr</p>
+                <p>Tider: 07-12:30</p>
+                <p>Ingår en måltid</p>
+                <hr />
+                <p>+ 150kr för upphämtning & avlämning</p>
+            </div>
+
+            <div class="paket">
+                <h2>Kampanj 6 dgr</h2>
+                <p>Pris: 1820 kr</p>
+                <p>Ingår två måltider/dag</p>
+                <p>Betalnings vilkor 30 dgr</p>
+                <hr />
+                <p>Perfekt för nya</p>
+            </div>
+
+            <div class="paket">
+                <h2>Extra</h2>
+                <p>Övernattning: 450kr</p>
+                <p>Klippkort 10 ggr: 2800kr</p>
+                <p>1kg hundmat: 159kr</p>
+                <hr />
+                <p>Klippning mellan 800-2000kr</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="personal" class="page" hidden>
+        <div class="Personal-paket">
+            <h1>Personal</h1>
+        </div>
+
+        <div class="personal">
+            <article class="person">
+                <img src="images/max.jpeg" alt="en bild på mig max">
+                <h1>Max</h1>
+                <fieldset>
+                    <p>Hej! Jag heter Max och jobbar på Tassen. Jag älskar hundar och tycker om att lära känna varje
+                        hunds
+                        personlighet. För mig är det viktigt att hundarna känner sig trygga, får mycket omsorg och har
+                        roligt under dagen. Jag ser fram emot att välkomna dig och din hund till Tassen!</p>
+                </fieldset>
+            </article>
+
+            <article class="person">
+                <img src="images/fanny.jpeg" alt=" en bild på min syster fanny">
+                <h1>Fanny</h1>
+                <fieldset>
+                    <p>Hej! Jag heter Fanny och jobbar på Tassen. Jag tycker om att vara med hundar och se till att de
+                        känner sig trygga och trivs hos oss. Alla hundar har sin egen personlighet, och jag gillar att
+                        lära
+                        känna dem och ge dem en rolig och omsorgsfull dag. Jag ser fram emot att välkomna dig och din
+                        hund
+                        till Tassen!</p>
+                </fieldset>
+            </article>
+        </div>
+    </section>
+
+    <!--<section id="kontakt">
+<div class="rubrik">
+<h1>Kontakta oss</h1>
+<p>Fyll i uppgifter nedan för bokning</p>
+</div>     -->
+
+    <section id="kontakt" class="page" hidden>
+        <form id="kontakt-form">
+            <div class="kontakt">
+                <div class="input-field">
+
+                    <h2>Skicka en förfrågan</h2>
+                    <p>Din förfrågan sparas i din webbläsare. Vi ringer upp dig.</p>
+
+                    <form id="kontakt-form">
+
+                        <div class="form-row">
+                            <label for="fornamn">Förnamn</label>
+                            <input type="text" id="fornamn" name="fornamn">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="efternamn">Efternamn</label>
+                            <input type="text" id="efternamn" name="efternamn">
+                        </div>
+
+
+                        <div class="form-row">
+                            <label for="hundens-namn">Hundens namn</label>
+                            <input type="text" id="hundens-namn" name="hundensNamn">
+                        </div>
+
+
+                        <div class="form-row">
+                            <label for="nummer">Din Tel:</label>
+                            <input type="text" id="nummer" name="nummer">
+                        </div>
+
+
+
+
+                        <div class="form-row">
+                            <label for="onskat-datum">Önskat datum</label>
+                            <input type="date" id="onskat-datum" name="onskatDatum">
+                        </div>
+
+                        <p id="form-meddelande" role="status"></p>
+
+                        <button type="submit">Lägg till förfrågan</button>
+                    </form>
+
+                    <h2>Dina förfrågningar</h2>
+                    <ul id="forfragningslista"></ul>
+    </section>
+
+
+    <section id="review" class="page" hidden>
+        <div class="omdömen" id="Omdömen">
+            <h1>Omdömen</h1>
+            <p>Några av våra kunder recensioner</p>
+        </div>
+
+
+        <div id="review-presentasion">
+            <h2 id="name">Leo</h2>
+        </div>
+
+        <img src="images/messi.jpeg" alt="Messis omdöme" id="image">
+
+        <p id="job">idrottare</p>
+
+        </div>
+        <article id="opinion">
+            <p>Bästa hund pensionatet, väldig trevlig personal</p>
+        </article>
+
+        <div class="button">
+            <button id="btn_prev" class="review-btn" type="button">
+                <i class="left"></i>
+            </button>
+            <button id="btn_next" class="review-btn" type="button">
+                <i class="right"></i>
+            </button>
+        </div>
+    </section>
+
+
+    <fieldset>
+        <footer>
+            <p>Tel: 0300-12 34 56</p>
+            <p>Email: hej@tassen.se</p>
+            <p>Adress: Hagavägen 4</p>
+        </footer>
+    </fieldset>
+
+    <footer>
+        <p>&copy; 2026 Hund-hemsida. Av Max vasteson.</p>
+    </footer>
+
+
 </body>
+
 </html>
